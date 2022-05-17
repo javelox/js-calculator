@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pablito.css">
+    <title>calculadora de juan pablo aranda</title>
+</head>
+
+<body>
+    <center>
+        <div class="contenedor">
+            <div class="display">
+                <input type="text" id="pantalla" placeholder="0">
+            </div>
+            <div class="contenedorbotones">
+                <div class="botones">
+                    <button id="ce" onclick="borrardigitos()">CE</button>
+                    <button onclick="fact()">x!</button>
+                    <button class="simbolo">(</button>
+                    <button class="simbolo">)</button>
+                    <button class="simbolo">%</button>
+                    <button id="ac" onclick="pantalla.value=''">AC</button>
+                </div>
+                <div class="botones">
+                    <button onclick="sin()">sin</button>
+                    <button onclick="pi()">π</button>
+                    <button class="simbolo">7</button>
+                    <button class="simbolo">8</button>
+                    <button class="simbolo">9</button>
+                    <button class="simbolo">÷</button>
+                </div>
+                <div class="botones">
+                    <button onclick="cos()">cos</button>
+                    <button onclick="log()">log</button>
+                    <button class="simbolo">4</button>
+                    <button class="simbolo">5</button>
+                    <button class="simbolo">6</button>
+                    <button class="simbolo">×</button>
+                </div>
+                <div class="botones">
+                    <button onclick="tan()">tan</button>
+                    <button onclick="raiz()">√</button>
+                    <button class="simbolo">1</button>
+                    <button class="simbolo">2</button>
+                    <button class="simbolo">3</button>
+                    <button class="simbolo"> - </button>
+                </div>
+                <div class="botones">
+                    <button onclick="e()">e</button>
+                    <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span> </button>
+                    <button class="simbolo">0</button>
+                    <button class="simbolo">.</button>
+                    <button id="eval" onclick="pantalla.value=eval(pantalla.value)">=</button>
+                    <button class="simbolo">+</button>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+<script src="java.js"></script>
+
+</html>
